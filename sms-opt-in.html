@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMS Notification Opt-In | EMA</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sage-600: #5a7a57;
+      --sage-100: #e8ede5;
+      --sand-50: #faf9f7;
+      --sand-100: #f2f0ed;
+      --warmgray-800: #423d39;
+      --warmgray-600: #6b6560;
+      --border: #e6e3df;
+    }
+
+    body {
+      margin: 0;
+      background: var(--sand-50);
+      color: var(--warmgray-800);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1 {
+      font-family: Lora, serif;
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin: 0.75rem 0;
+      color: var(--warmgray-600);
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem;
+      margin-top: 2rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      color: var(--warmgray-800);
+    }
+
+    input[type="tel"] {
+      width: 100%;
+      padding: 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-size: 1rem;
+      background: var(--sand-100);
+      box-sizing: border-box;
+    }
+
+    .disclosure {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--sage-100);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: var(--warmgray-800);
+    }
+
+    .note {
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--warmgray-600);
+    }
+
+    button {
+      margin-top: 1.25rem;
+      background: var(--sage-600);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--warmgray-600);
+    }
+
+    footer a {
+      color: var(--warmgray-600);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .back-link {
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: var(--sage-600);
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>SMS Notification Opt-In</h1>
+
+    <p>
+      EMA (Electronic Mental Health Application) uses SMS messaging only for
+      account security and appointment-related notifications.
+    </p>
+
+    <div class="card">
+      <label for="phone">Mobile Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+1 (555) 555-5555"
+        disabled
+      />
+
+      <div class="disclosure">
+        By providing your mobile number, you consent to receive SMS messages
+        from EMA related to account security and appointment notifications.
+        Message frequency varies. Message and data rates may apply.
+        Reply <strong>STOP</strong> to opt out. Reply <strong>HELP</strong> for help.
+      </div>
+
+      <button type="button" disabled>
+        Continue
+      </button>
+
+      <p class="note">
+        This page demonstrates the SMS opt-in workflow for carrier compliance review.
+      </p>
+    </div>
+
+    <div class="back-link">
+      <a href="/">&larr; Back to ruha.io</a>
+    </div>
+
+    <footer>
+      <p>
+        <a href="/privacy.html">Privacy Policy</a> &middot;
+        <a href="/terms.html">Terms & Conditions</a>
+      </p>
+      <p>Contact: <a href="mailto:support@ruha.io">support@ruha.io</a></p>
+      <p>&copy; Recursive Systems Labs</p>
+    </footer>
+  </div>
+</body>
+</html>
