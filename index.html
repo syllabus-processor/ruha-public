@@ -200,7 +200,7 @@
 
         <section>
             <h2>Current Status</h2>
-            <div class="status-badge">Observation Phase</div>
+            <span id="status-badge" class="status-badge">Observation Phase</span>
             <p>EMA is currently in staged use and stability observation. New features are introduced only after demonstrating safe, predictable operation in real clinical workflows.</p>
         </section>
 
@@ -213,5 +213,16 @@
             <p class="copyright">© Recursive Systems Labs</p>
         </footer>
     </div>
+
+    <script>
+        fetch('/status.json')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('status-badge').innerText = data.phase + ' Phase';
+            })
+            .catch(() => {
+                // Keep default text on error
+            });
+    </script>
 </body>
 </html>

@@ -53,23 +53,6 @@
             margin-bottom: 2.5rem;
         }
 
-        .intro {
-            background-color: var(--sand-100);
-            padding: 1.25rem 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2.5rem;
-        }
-
-        .intro p {
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-            color: var(--warmgray-600);
-        }
-
-        .intro p:last-child {
-            margin-bottom: 0;
-        }
-
         h2 {
             font-family: 'Lora', Georgia, serif;
             font-size: 1.1rem;
@@ -77,6 +60,15 @@
             color: var(--warmgray-800);
             margin-top: 2.5rem;
             margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--warmgray-700);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
         p {
@@ -113,61 +105,71 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: December 2025</p>
+        <p class="updated">Last Updated: December 2025</p>
 
-        <div class="intro">
-            <p>Ruha operates clinical software systems with a commitment to minimizing data collection, reducing exposure, and respecting the boundaries of mental health care.</p>
-            <p>We take privacy seriously and collect only what is necessary for the operation of the system.</p>
-        </div>
+        <h2>Overview</h2>
+        <p>Recursive Systems Labs ("we," "us") operates ruha.io and develops EMA (Electronic Mental Health Application), a clinical support system for mental health practitioners.</p>
+        <p>We design EMA to support clinical work without surveillance, analytics on clinical content, or secondary data use.</p>
+        <p>This Privacy Policy describes how information is handled on ruha.io and within EMA.</p>
 
-        <h2>What We Collect</h2>
-        <p>We collect only the information required to operate our systems, such as:</p>
+        <h2>Information We Collect</h2>
+
+        <h3>Public Website (ruha.io)</h3>
         <ul>
-            <li>Account information (email address, authentication data)</li>
-            <li>System configuration and scheduling metadata</li>
-            <li>Clinical documentation entered intentionally by a clinician</li>
-            <li>Audit logs required for security and compliance</li>
+            <li>Basic server logs (IP address, request time, user agent) for security and reliability</li>
+            <li>No tracking cookies</li>
+            <li>No advertising or analytics scripts</li>
         </ul>
-        <p>Clinical data is handled only as necessary to provide functionality and is never used for advertising, analytics, or secondary purposes.</p>
 
-        <h2>What We Do Not Do</h2>
+        <h3>EMA Application</h3>
+        <p>EMA processes information entered by clinicians and clients solely to support clinical workflows. This may include:</p>
+        <ul>
+            <li>Client demographic information</li>
+            <li>Intake forms and clinical documentation</li>
+            <li>Scheduling and communication metadata</li>
+            <li>Authentication and security logs</li>
+        </ul>
+
+        <h2>How Information Is Used</h2>
+        <p>Information is used only to:</p>
+        <ul>
+            <li>Provide EMA's clinical functionality</li>
+            <li>Maintain system security and integrity</li>
+            <li>Meet legal and compliance obligations</li>
+        </ul>
+
         <p>We do not:</p>
         <ul>
-            <li>Sell or rent data</li>
-            <li>Use clinical data for advertising</li>
-            <li>Use session content to train AI models</li>
-            <li>Perform behavioral analytics on clinicians or clients</li>
-            <li>Record or transcribe telehealth sessions by default</li>
+            <li>Analyze clinical content for behavioral metrics</li>
+            <li>Sell or license data</li>
+            <li>Use data for advertising</li>
+            <li>Train machine learning or AI models on clinical data</li>
+            <li>Generate productivity scores or performance analytics</li>
         </ul>
 
         <h2>Telehealth & Communications</h2>
-        <p>Where communications features are present:</p>
         <ul>
-            <li>Sessions are ephemeral by default</li>
-            <li>No audio or video is recorded unless explicitly initiated</li>
-            <li>No background telemetry is collected</li>
+            <li>Telehealth sessions are not recorded or transcribed by default</li>
+            <li>Messages are delivered only as intended by the clinician</li>
+            <li>No session content is monitored or analyzed</li>
         </ul>
 
-        <h2>SMS Messaging</h2>
-        <p>If you opt in to receive SMS messages:</p>
+        <h2>Data Access & Control</h2>
+        <p>Clinicians retain control over their data.</p>
         <ul>
-            <li>Messages are strictly transactional (e.g., login codes, appointment notifications)</li>
-            <li>No clinical or PHI content is sent via SMS</li>
-            <li>You may opt out at any time by replying STOP</li>
+            <li>Data export options are available</li>
+            <li>Self-hosting options may be provided</li>
+            <li>Access is role-based and audited</li>
         </ul>
 
-        <h2>Data Ownership & Access</h2>
-        <ul>
-            <li>Clinicians retain full ownership of their data</li>
-            <li>Data export is always available</li>
-            <li>Self-hosting options exist for qualified users</li>
-        </ul>
+        <h2>Legal & Compliance</h2>
+        <p>EMA is designed to support HIPAA-aligned workflows. Where applicable, Business Associate Agreements (BAAs) are available.</p>
 
-        <h2>Security</h2>
-        <p>We use encryption, access controls, and audit logging consistent with HIPAA-aligned practices. Access to data is restricted by role and logged for accountability.</p>
+        <h2>Changes</h2>
+        <p>This policy may be updated as EMA evolves. Changes will be reflected on this page.</p>
 
         <h2>Contact</h2>
-        <p>For privacy questions, contact: <a href="mailto:john@ruha.io">john@ruha.io</a></p>
+        <p>Privacy questions: <a href="mailto:john@ruha.io">john@ruha.io</a></p>
 
         <div class="back-link">
             <a href="/">← Back to ruha.io</a>
