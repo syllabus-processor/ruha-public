@@ -3,121 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - EMA</title>
+    <title>Privacy Policy — ruha.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --sand-50: #faf9f7;
+            --sand-100: #f2f0ed;
+            --sand-200: #e8e6e1;
+            --sage-500: #6b8f71;
+            --sage-600: #5a7a57;
+            --warmgray-800: #423d39;
+            --warmgray-700: #524d48;
+            --warmgray-600: #6b6560;
+            --warmgray-500: #857f78;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
-            color: #333;
-            background-color: #fafafa;
-            padding: 2rem;
-            max-width: 680px;
+            color: var(--warmgray-700);
+            background-color: var(--sand-50);
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 760px;
             margin: 0 auto;
         }
+
         h1 {
+            font-family: 'Lora', Georgia, serif;
             font-size: 1.75rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-            color: #1a1a1a;
+            font-weight: 500;
+            color: var(--warmgray-800);
+            margin-bottom: 0.5rem;
         }
+
         .updated {
-            color: #666;
+            color: var(--warmgray-500);
             font-size: 0.9rem;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
+
+        .intro {
+            background-color: var(--sand-100);
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2.5rem;
+        }
+
+        .intro p {
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--warmgray-600);
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
         h2 {
+            font-family: 'Lora', Georgia, serif;
             font-size: 1.1rem;
             font-weight: 600;
-            margin-top: 2rem;
+            color: var(--warmgray-800);
+            margin-top: 2.5rem;
             margin-bottom: 0.75rem;
-            color: #1a1a1a;
         }
+
         p {
             margin-bottom: 1rem;
+            color: var(--warmgray-600);
         }
+
         ul {
             margin-bottom: 1rem;
             padding-left: 1.5rem;
         }
+
         li {
             margin-bottom: 0.5rem;
+            color: var(--warmgray-600);
         }
-        .intro {
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 2rem;
-        }
+
         .back-link {
             margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #e0e0e0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--sand-200);
         }
+
         a {
-            color: #0066cc;
+            color: var(--sage-600);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: December 2025</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: December 2025</p>
 
-    <div class="intro">
-        <p>ruha.io operates EMA (Electronic Mental Health Application), a clinician-focused software platform designed to support ethical, HIPAA-aligned mental health practice.</p>
-        <p>We take privacy seriously and collect only what is necessary for the operation of the system.</p>
-    </div>
+        <div class="intro">
+            <p>Ruha operates clinical software systems with a commitment to minimizing data collection, reducing exposure, and respecting the boundaries of mental health care.</p>
+            <p>We take privacy seriously and collect only what is necessary for the operation of the system.</p>
+        </div>
 
-    <h2>Information We Collect</h2>
-    <p>Depending on how EMA is used, we may collect:</p>
-    <ul>
-        <li>Account information (email address, authentication data)</li>
-        <li>Scheduling and system metadata</li>
-        <li>Clinical documentation entered intentionally by a clinician</li>
-        <li>Audit logs required for security and compliance</li>
-    </ul>
+        <h2>What We Collect</h2>
+        <p>We collect only the information required to operate our systems, such as:</p>
+        <ul>
+            <li>Account information (email address, authentication data)</li>
+            <li>System configuration and scheduling metadata</li>
+            <li>Clinical documentation entered intentionally by a clinician</li>
+            <li>Audit logs required for security and compliance</li>
+        </ul>
+        <p>Clinical data is handled only as necessary to provide functionality and is never used for advertising, analytics, or secondary purposes.</p>
 
-    <h2>Information We Do Not Collect</h2>
-    <p>We do not:</p>
-    <ul>
-        <li>Sell or rent data</li>
-        <li>Use clinical data for advertising</li>
-        <li>Use session content to train AI models</li>
-        <li>Perform behavioral analytics on clinicians or clients</li>
-        <li>Record or transcribe telehealth sessions by default</li>
-    </ul>
+        <h2>What We Do Not Do</h2>
+        <p>We do not:</p>
+        <ul>
+            <li>Sell or rent data</li>
+            <li>Use clinical data for advertising</li>
+            <li>Use session content to train AI models</li>
+            <li>Perform behavioral analytics on clinicians or clients</li>
+            <li>Record or transcribe telehealth sessions by default</li>
+        </ul>
 
-    <h2>SMS Messaging</h2>
-    <p>If you opt in to receive SMS messages:</p>
-    <ul>
-        <li>Messages are strictly transactional (e.g., login codes, appointment notifications)</li>
-        <li>No clinical or PHI content is sent via SMS</li>
-        <li>You may opt out at any time by replying STOP</li>
-    </ul>
+        <h2>Telehealth & Communications</h2>
+        <p>Where communications features are present:</p>
+        <ul>
+            <li>Sessions are ephemeral by default</li>
+            <li>No audio or video is recorded unless explicitly initiated</li>
+            <li>No background telemetry is collected</li>
+        </ul>
 
-    <h2>Data Ownership & Access</h2>
-    <ul>
-        <li>Clinicians retain full access to their data</li>
-        <li>Data export is always available</li>
-        <li>Self-hosting options exist for qualified users</li>
-    </ul>
+        <h2>SMS Messaging</h2>
+        <p>If you opt in to receive SMS messages:</p>
+        <ul>
+            <li>Messages are strictly transactional (e.g., login codes, appointment notifications)</li>
+            <li>No clinical or PHI content is sent via SMS</li>
+            <li>You may opt out at any time by replying STOP</li>
+        </ul>
 
-    <h2>Security</h2>
-    <p>We use industry-standard security practices including encryption, access controls, and audit logging.</p>
+        <h2>Data Ownership & Access</h2>
+        <ul>
+            <li>Clinicians retain full ownership of their data</li>
+            <li>Data export is always available</li>
+            <li>Self-hosting options exist for qualified users</li>
+        </ul>
 
-    <h2>Contact</h2>
-    <p>For privacy questions, contact: <a href="mailto:support@ruha.io">support@ruha.io</a></p>
+        <h2>Security</h2>
+        <p>We use encryption, access controls, and audit logging consistent with HIPAA-aligned practices. Access to data is restricted by role and logged for accountability.</p>
 
-    <div class="back-link">
-        <a href="/">&larr; Back to ruha.io</a>
+        <h2>Contact</h2>
+        <p>For privacy questions, contact: <a href="mailto:john@ruha.io">john@ruha.io</a></p>
+
+        <div class="back-link">
+            <a href="/">← Back to ruha.io</a>
+        </div>
     </div>
 </body>
 </html>

@@ -3,125 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMA - Electronic Mental Health Application</title>
+    <title>ruha.io — Clinical software built with restraint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --sand-50: #faf9f7;
+            --sand-100: #f2f0ed;
+            --sand-200: #e8e6e1;
+            --sage-500: #6b8f71;
+            --sage-600: #5a7a57;
+            --sage-100: #e8ede5;
+            --warmgray-800: #423d39;
+            --warmgray-700: #524d48;
+            --warmgray-600: #6b6560;
+            --warmgray-500: #857f78;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
-            padding: 2rem;
-            max-width: 680px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--warmgray-700);
+            background-color: var(--sand-50);
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 760px;
             margin: 0 auto;
         }
+
         h1 {
-            font-size: 1.75rem;
-            font-weight: 600;
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--warmgray-800);
             margin-bottom: 0.5rem;
-            color: #1a1a1a;
         }
-        .subtitle {
-            color: #666;
-            margin-bottom: 2rem;
-            font-size: 1rem;
-        }
-        h2 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-top: 2rem;
+
+        .tagline {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.75rem;
+            font-weight: 500;
+            color: var(--warmgray-800);
             margin-bottom: 0.75rem;
-            color: #1a1a1a;
+            line-height: 1.3;
         }
+
+        .subtitle {
+            color: var(--sage-600);
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--warmgray-800);
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--warmgray-600);
+        }
+
         ul {
             list-style: none;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
+
         li {
-            padding: 0.25rem 0;
+            padding: 0.3rem 0;
             padding-left: 1.25rem;
             position: relative;
+            color: var(--warmgray-600);
         }
+
         li::before {
             content: "";
             position: absolute;
             left: 0;
-            top: 0.7rem;
-            width: 6px;
-            height: 6px;
-            background-color: #666;
+            top: 0.75rem;
+            width: 5px;
+            height: 5px;
+            background-color: var(--sage-500);
             border-radius: 50%;
         }
-        .status {
-            background-color: #f0f0f0;
-            padding: 1rem;
-            border-radius: 4px;
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.4rem 0.85rem;
+            background: var(--sage-100);
+            color: var(--sage-600);
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .governance {
+            background-color: var(--sand-100);
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
             margin: 2rem 0;
-            font-size: 0.9rem;
-            color: #555;
         }
-        .links {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #e0e0e0;
+
+        .governance p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
         }
-        .links a {
-            color: #0066cc;
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--sand-200);
+        }
+
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--sage-600);
             text-decoration: none;
             margin-right: 1.5rem;
+            font-size: 0.9rem;
         }
-        .links a:hover {
+
+        .footer-links a:hover {
             text-decoration: underline;
         }
+
         .contact {
-            margin-top: 1.5rem;
             font-size: 0.9rem;
-            color: #666;
+            color: var(--warmgray-500);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact a {
+            color: var(--sage-600);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: var(--warmgray-500);
         }
     </style>
 </head>
 <body>
-    <h1>EMA</h1>
-    <p class="subtitle">Electronic Mental Health Application</p>
+    <div class="container">
+        <h1>ruha.io</h1>
+        <p class="tagline">Technology for clinical work, built with restraint.</p>
+        <p class="subtitle">Supporting mental health practice without extraction, surveillance, or pressure.</p>
 
-    <p>EMA is a clinician-centered software platform designed to reduce administrative burden in mental health practice.</p>
+        <section>
+            <h2>What We're Building</h2>
+            <p>Ruha is a small research and software effort focused on tools that support real clinical work—especially for solo practitioners, supervisors, and training environments.</p>
+            <p>Our primary system in development is <strong>EMA (Electronic Mental Health Application)</strong>: a clinician-centered platform designed to support intake, documentation, and continuity of care while preserving clinical judgment and calm cognition.</p>
+            <p>EMA is not designed to optimize throughput or productivity. It is designed to stay out of the way of care.</p>
+        </section>
 
-    <h2>Built for</h2>
-    <ul>
-        <li>Solo practitioners</li>
-        <li>Early-career therapists</li>
-        <li>Supervisors and training contexts</li>
-    </ul>
+        <section>
+            <h2>What EMA Does Not Do</h2>
+            <ul>
+                <li>No analytics on clinical content</li>
+                <li>No productivity scoring or engagement metrics</li>
+                <li>No sale or secondary use of data</li>
+                <li>No model training on clinical material</li>
+                <li>No feature expansion without stability earned through real use</li>
+            </ul>
+            <p>These constraints are architectural, not aspirational.</p>
+        </section>
 
-    <h2>EMA prioritizes</h2>
-    <ul>
-        <li>Calm cognition</li>
-        <li>Ethical documentation</li>
-        <li>Clinician autonomy</li>
-        <li>Privacy by design</li>
-    </ul>
+        <div class="governance">
+            <h2>Governance & Oversight</h2>
+            <p>EMA is developed under explicit design principles and clinician advisory oversight intended to prevent drift toward institutional or extractive software models. If a feature benefits procurement but harms clinicians or clients, it is not built.</p>
+        </div>
 
-    <h2>EMA does not</h2>
-    <ul>
-        <li>Market to patients</li>
-        <li>Sell or analyze clinical data</li>
-        <li>Use session content for AI training</li>
-        <li>Optimize for productivity metrics</li>
-    </ul>
+        <section>
+            <h2>Current Status</h2>
+            <div class="status-badge">Observation Phase</div>
+            <p>EMA is currently in staged use and stability observation. New features are introduced only after demonstrating safe, predictable operation in real clinical workflows.</p>
+        </section>
 
-    <div class="status">
-        This platform is currently in staged development and observation.
+        <footer>
+            <div class="footer-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms & Conditions</a>
+            </div>
+            <p class="contact">Contact: <a href="mailto:john@ruha.io">john@ruha.io</a></p>
+            <p class="copyright">© Recursive Systems Labs</p>
+        </footer>
     </div>
-
-    <div class="links">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms &amp; Conditions</a>
-    </div>
-
-    <p class="contact">For questions: <a href="mailto:support@ruha.io">support@ruha.io</a></p>
 </body>
 </html>
