@@ -125,6 +125,71 @@
     .back-link a:hover {
       text-decoration: underline;
     }
+
+    /* Collapsible details section */
+    .details-section {
+      margin-top: 2rem;
+    }
+
+    details {
+      background: var(--sand-100);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+    }
+
+    summary {
+      font-weight: 500;
+      color: var(--sage-600);
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "▸ ";
+    }
+
+    details[open] summary::before {
+      content: "▾ ";
+    }
+
+    .details-content {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--warmgray-600);
+    }
+
+    .details-content h3 {
+      font-family: Lora, serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--warmgray-800);
+      margin: 1rem 0 0.5rem 0;
+    }
+
+    .details-content h3:first-child {
+      margin-top: 0;
+    }
+
+    .details-content p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .details-content ul {
+      margin: 0.5rem 0;
+      padding-left: 1.25rem;
+    }
+
+    .details-content li {
+      margin: 0.25rem 0;
+    }
   </style>
 </head>
 
@@ -161,6 +226,52 @@
       <p class="note">
         This page demonstrates the SMS opt-in workflow for carrier compliance review.
       </p>
+    </div>
+
+    <div class="details-section">
+      <details>
+        <summary>How SMS Consent Works</summary>
+        <div class="details-content">
+          <h3>When You Provide Your Phone Number</h3>
+          <p>
+            Users provide their mobile phone number during EMA account creation
+            or when accepting a clinician invitation. The phone number field appears
+            on the account setup form with the disclosure shown above displayed
+            directly adjacent to the field.
+          </p>
+
+          <h3>How Consent Is Recorded</h3>
+          <p>
+            Users must actively submit the form to complete account creation,
+            which records SMS opt-in consent. No SMS messages are sent without
+            this explicit consent action.
+          </p>
+
+          <h3>What Messages You Will Receive</h3>
+          <ul>
+            <li>Account security codes (e.g., two-factor authentication)</li>
+            <li>Appointment notifications and reminders</li>
+          </ul>
+          <p>
+            Message frequency varies based on account activity.
+            No marketing or promotional messages are ever sent.
+          </p>
+
+          <h3>Your Control</h3>
+          <ul>
+            <li><strong>STOP</strong> — Reply STOP to any message to opt out immediately</li>
+            <li><strong>HELP</strong> — Reply HELP for assistance</li>
+          </ul>
+          <p>
+            Standard message and data rates may apply depending on your carrier plan.
+          </p>
+
+          <h3>Contact</h3>
+          <p>
+            Questions about SMS messaging: <a href="mailto:support@ruha.io">support@ruha.io</a>
+          </p>
+        </div>
+      </details>
     </div>
 
     <div class="back-link">
