@@ -126,6 +126,33 @@
       text-decoration: underline;
     }
 
+    /* Checkbox consent */
+    .consent-checkbox {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--sand-100);
+      border-radius: 8px;
+    }
+
+    .consent-checkbox input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 0.15rem;
+      accent-color: var(--sage-600);
+      cursor: pointer;
+    }
+
+    .consent-checkbox label {
+      font-size: 0.9rem;
+      color: var(--warmgray-800);
+      cursor: pointer;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
     /* Collapsible details section */
     .details-section {
       margin-top: 2rem;
@@ -217,6 +244,14 @@
         from EMA related to account security and appointment notifications.
         Message frequency varies. Message and data rates may apply.
         Reply <strong>STOP</strong> to opt out. Reply <strong>HELP</strong> for help.
+      </div>
+
+      <div class="consent-checkbox">
+        <input type="checkbox" id="sms-consent" name="sms-consent" disabled />
+        <label for="sms-consent">
+          I agree to receive SMS messages from EMA for account security and appointment notifications.
+          I understand I can opt out at any time by replying STOP.
+        </label>
       </div>
 
       <button type="button" disabled>
